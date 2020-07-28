@@ -31,7 +31,7 @@ steps:
   - type: gate 
     left: '%payload.pull_request.title%'
     operator: ===
-    right: Add name to README
+    right: "Learning Markdown"
 
 # Step 2: Interact with Markdown
  - title: How to use Markdown? # the title of the step, shown to the learner in the course progress page
