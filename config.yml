@@ -28,10 +28,10 @@ steps:
   description: # a description of the step, shown to the learner in the course progress page
   event: pull_request # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
-- type: gate 
-  left: '%payload.pull_request.title%'
-  operator: ===
-  right: "Learning Markdown"
+  - type: gate 
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: "Learning Markdown"
 
 # Step 2: Interact with Markdown
  - title: How to use Markdown? # the title of the step, shown to the learner in the course progress page
